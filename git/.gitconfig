@@ -1,0 +1,57 @@
+[user]
+  name = Humberto Luksevicius
+  email = luks.dev@outlook.com
+
+[core]
+  editor = vim
+  excludefile = ~/.gitignore_global
+
+[push]
+  default = current
+
+[pull]
+  default = current
+  rebase = true
+
+[branch]
+  autosetuprebase = always
+
+[commit]
+  template = ~/.gitmessage
+
+[color]
+  ui = true
+
+[color "status"]
+  added = green
+  changed = yellow
+  untracked = red
+
+[color "branch"]
+  current = white
+  remote = red
+
+[color "diff"]
+  meta = yellow
+  old = red
+  new = green 
+
+[alias]
+  a = add
+  ca = commit -a
+  cam = commit -am
+  cm = commit -m
+  s = status
+  pom = push origin master
+  pog = push origin gh-pages
+  puom = pull origin master
+  puog = pull origin gh-pages
+  cob = checkout -b
+  co = checkout
+  l = log --oneline --decorate --graph
+  lall = log --oneline --decorate --graph --all
+  ls = log --oneline --decorate --graph --stat
+  lt = log --graph --decorate --pretty=format:'%C(yellow)%h%Creset%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset' 
+
+[github]
+  user = humbertoluks
